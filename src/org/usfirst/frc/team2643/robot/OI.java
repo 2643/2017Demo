@@ -28,10 +28,10 @@ public class OI {
 		JoystickButton button2 = new JoystickButton(driveStick, 2);
 		JoystickButton button3 = new JoystickButton(driveStick, 3);
 		JoystickButton button4 = new JoystickButton(driveStick, 4);
-		button1.whenPressed(new DriveBackward(3));
-		button2.whenPressed(new TurnRight());
-		button3.whenPressed(new TurnLeft());
-		button4.whenPressed(new DriveForward(3));
+//		button1.whenPressed(new DriveBackward(3));
+//		button2.whenPressed(new TurnRight());
+//		button3.whenPressed(new TurnLeft());
+//		button4.whenPressed(new DriveForward(3));
 	}
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
