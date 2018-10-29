@@ -17,6 +17,7 @@ import org.usfirst.frc.team2643.robot.commands.Test;
 //import org.usfirst.frc.team2643.robot.commands.ExampleCommand;
 //import org.usfirst.frc.team2643.robot.commands.ExampleCommand;
 import org.usfirst.frc.team2643.robot.subsystems.Drive;
+import org.usfirst.frc.team2643.robot.subsystems.Dump;
 //import org.usfirst.frc.team2643.robot.subsystems.ExampleSubsystem;
 
 /**
@@ -29,6 +30,7 @@ import org.usfirst.frc.team2643.robot.subsystems.Drive;
 public class Robot extends TimedRobot {
 	public static OI oi;
 	public static Drive drive;
+	public static Dump dump;
 	Command m_autonomousCommand;
 	SendableChooser<Command> m_chooser = new SendableChooser<>();
 

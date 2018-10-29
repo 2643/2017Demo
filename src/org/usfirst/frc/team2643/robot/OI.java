@@ -9,6 +9,8 @@ package org.usfirst.frc.team2643.robot;
 
 import org.usfirst.frc.team2643.robot.commands.DriveBackward;
 import org.usfirst.frc.team2643.robot.commands.DriveForward;
+import org.usfirst.frc.team2643.robot.commands.DumpStop;
+import org.usfirst.frc.team2643.robot.commands.DumpTime;
 import org.usfirst.frc.team2643.robot.commands.TurnLeft;
 import org.usfirst.frc.team2643.robot.commands.TurnRight;
 
@@ -28,10 +30,13 @@ public class OI {
 		JoystickButton button2 = new JoystickButton(driveStick, 2);
 		JoystickButton button3 = new JoystickButton(driveStick, 3);
 		JoystickButton button4 = new JoystickButton(driveStick, 4);
+		JoystickButton button5 = new JoystickButton(driveStick, 5);
 //		button1.whenPressed(new DriveBackward(3));
 //		button2.whenPressed(new TurnRight());
 //		button3.whenPressed(new TurnLeft());
 //		button4.whenPressed(new DriveForward(3));
+		button5.whenPressed(new DumpTime());
+		button5.whenReleased(new DumpStop());
 	}
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
