@@ -3,6 +3,7 @@ package org.usfirst.frc.team2643.robot.subsystems;
 import org.usfirst.frc.team2643.robot.RobotMap;
 import org.usfirst.frc.team2643.robot.commands.HoldGear;
 
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -14,6 +15,7 @@ public class Gear extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	Spark gearMotor = new Spark(RobotMap.gearMotorPort); 
+	DigitalInput gearButton = new DigitalInput(RobotMap.gearButtonPort);
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
@@ -30,5 +32,13 @@ public class Gear extends Subsystem {
     	if(speed >= 0 && speed <=1) 
     		gearMotor.set(speed);
     }
+    
+    public boolean isSwitchHit() {
+    	if(gearButton.get() == true)
+    		return true;
+    	else
+    		return false; 
+    }
+    
 }
 
