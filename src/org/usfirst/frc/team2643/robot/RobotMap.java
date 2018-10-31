@@ -36,6 +36,7 @@ public class RobotMap {
 	public static int rFrontMotorPort = 6;
 	public static int rBackMotorPort = 1;
 	public static int dumpMotorPort = 4;
+	public static int gearMotorPort = 8; 
 	
 	public static int leftEncoderPort1 = 1;
 	public static int leftEncoderPort2 = 2;

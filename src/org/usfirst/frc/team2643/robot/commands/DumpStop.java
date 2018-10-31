@@ -31,6 +31,7 @@ public class DumpStop extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.dump.dumpStop(); 
     }
 
     // Called when another command which requires one or more of the same

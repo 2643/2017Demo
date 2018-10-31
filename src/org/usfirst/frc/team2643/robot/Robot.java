@@ -19,6 +19,7 @@ import org.usfirst.frc.team2643.robot.commands.Test;
 import org.usfirst.frc.team2643.robot.subsystems.Drive;
 import org.usfirst.frc.team2643.robot.subsystems.Dump;
 //import org.usfirst.frc.team2643.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team2643.robot.subsystems.Gear;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -31,6 +32,7 @@ public class Robot extends TimedRobot {
 	public static OI oi;
 	public static Drive drive;
 	public static Dump dump;
+	public static Gear gear;
 	Command m_autonomousCommand;
 	SendableChooser<Command> m_chooser = new SendableChooser<>();
 
@@ -42,6 +44,8 @@ public class Robot extends TimedRobot {
 	public void robotInit() {
 		drive  = new Drive();
 		oi = new OI();
+		dump = new Dump();
+		gear = new Gear();
 		m_autonomousCommand = new Test();
 	}
 
